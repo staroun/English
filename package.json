@@ -2,14 +2,15 @@
     "name": "management",
     "version": "1.0.0",
     "scripts": {
-        "client": "cd client && yarn start", 
+        "client": "cd client && yarn start",
         "server": "nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"" 
+        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
     },
     "dependencies": {
         "body-parser": "^1.20.1",
-        "express": "",
-        "nodemon": "^2.0.20"        
+        "concurrently": "^7.5.0",
+        "express": "^4.18.2",
+        "nodemon": "^2.0.20"
     },
     "devdependencies": {
         "concurrently": "^4.0.1"
